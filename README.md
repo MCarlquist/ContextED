@@ -1,5 +1,7 @@
 # ContextED
 
+[![Keep them updated](https://github.com/MCarlquist/ContextED/actions/workflows/dependency-review.yml/badge.svg?branch=main)](https://github.com/MCarlquist/ContextED/actions/workflows/dependency-review.yml)
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
 
 ## Development server
