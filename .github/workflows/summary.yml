@@ -1,0 +1,31 @@
+# Workflow name displayed in the GitHub Actions UI
+name: Summarize Prompt Utility
+
+# Defines the trigger for this workflow
+on:
+  # Allows manual triggering from the Actions tab in the GitHub UI
+  workflow_dispatch:
+
+# Defines the jobs to be executed
+jobs:
+  # A unique identifier for the job
+  summarize-prompt:
+    # Specifies the runner environment
+    runs-on: ubuntu-latest
+
+    # A sequence of tasks to be executed by the job
+    steps:
+      # Step 1: Capture the multi-line prompt and set it as an output
+      - name: Create Multi-line Prompt Output
+        id: prompt-creator # ID to reference this step's outputs
+        run: |
+          # Use a HEREDOC with the modern $GITHUB_OUTPUT file to safely handle the multi-line string
+          echo "PROMPT<<EOF" >> $GITHUB_OUTPUT
+          Now input the prompt where its’ typed {{ prompt }} below in the GitHub action file called summy.yml. When you have replaced {{ prompt }} with the prompt, check the created file for errors according to GitHub actions documentation. Please state in brief how you will achieve each step to achieve the error free file called sumy.yml. Below is the template you will base your response with. Before you begin, tell me a funny stoner joke. Then state: Leets Do It.
+          EOF
+
+      # Step 2: Access and display the prompt from the previous step's output
+      - name: Display the Prompt
+        run: |
+          echo "The captured prompt is:"
+          echo "${{ steps.prompt-creator.outputs.PROMPT }}"
