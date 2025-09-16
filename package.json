@@ -1,0 +1,26 @@
+{
+  "name": "contexted",
+  "version": "1.0.0",
+  "description": "**An innovative web application to empower educators, social workers, and community leaders with data-informed insights for improving educational outcomes.**",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix client\"",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix client\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MCarlquist/ContextED.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MCarlquist/ContextED/issues"
+  },
+  "homepage": "https://github.com/MCarlquist/ContextED#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
