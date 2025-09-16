@@ -1,6 +1,7 @@
 # Gemini Context: ContextED Mapper
 
 This file provides context to the Gemini AI assistant to help it understand the **ContextED Mapper** project.
+Use PROJECT_PLAN.md as a focus point.
 
 ## Project Overview
 
