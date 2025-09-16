@@ -1,8 +1,8 @@
 {
   "name": "contexted",
   "version": "1.0.0",
+  "private": true,
   "description": "**An innovative web application to empower educators, social workers, and community leaders with data-informed insights for improving educational outcomes.**",
-  "main": "index.js",
   "scripts": {
     "start": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix client\"",
     "dev": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix client\"",
