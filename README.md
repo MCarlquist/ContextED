@@ -1,61 +1,62 @@
-# ContextED
+# ContextED Mapper
 
-[![Keep them updated](https://github.com/MCarlquist/ContextED/actions/workflows/dependency-review.yml/badge.svg?branch=main)](https://github.com/MCarlquist/ContextED/actions/workflows/dependency-review.yml)
+**An innovative web application to empower educators, social workers, and community leaders with data-informed insights for improving educational outcomes.**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.15.
+---
 
-## Development server
+## The Problem
 
-To start a local development server, run:
+Educators and social support professionals often lack accessible, localized, and easily digestible data to understand the broader socio-political context impacting their students and school communities. This gap can hinder targeted interventions, efficient resource allocation, and a holistic understanding of community needs.
 
+## The Solution: ContextED Mapper
+
+ContextED Mapper is a web application that bridges this gap by providing an intuitive platform to visualize community resources and socio-political data on an interactive map. It aims to foster data-informed decision-making, enhance resource allocation, and strengthen community collaboration.
+
+## Key Features
+
+*   **Interactive Geospatial Mapping:** Dynamic map interface displaying multiple data layers (resources, demographics, school zones).
+*   **Community Data Contribution:** User-friendly tools for submitting new resources, verifying existing data, and adding qualitative "Community Narratives."
+*   **Gamification ("Community Impact Cup"):** A collective, school-based leaderboard that encourages data contribution. Schools compete to enrich data, with scores based on data quantity/quality and aggregated academic performance metrics.
+*   **Secure User Management:** Robust authentication and authorization for different user roles.
+*   **Content Moderation:** A system for administrators to review and approve user-generated content.
+
+## Technical Stack
+
+*   **Frontend:** Angular, Leaflet.js for mapping
+*   **Backend:** Node.js, Express.js
+*   **Database:** Supabase (PostgreSQL) with the PostGIS extension for geospatial data.
+
+## Getting Started
+
+This project is a monorepo with a `client` and `backend` directory.
+
+**Prerequisites:**
+*   Node.js
+*   Angular CLI
+
+**Backend Setup:**
 ```bash
+cd backend
+npm install
+# Add .env file with Supabase credentials
+npm start
+```
+
+**Frontend Setup:**
+```bash
+cd client
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Contributing
 
-## Code scaffolding
+We are seeking passionate individuals who are eager to contribute to a project with significant social impact. We are looking for expertise in:
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+*   Backend Development (Node.js/Express.js/Supabase)
+*   Frontend Development (Angular, Leaflet.js)
+*   UI/UX Design
+*   Data Science/Analysis
+*   Educational or Social Sector Expertise
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+If you're excited by the vision of ContextED Mapper and want to help build a tool that can truly make a difference, please check out the issues and feel free to reach out!
