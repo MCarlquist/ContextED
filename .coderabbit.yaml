@@ -1,0 +1,12 @@
+# Minimal configuration for getting started
+reviews:
+  profile: "assertive"
+  high_level_summary: true
+  auto_review:
+  enabled: true
+  drafts: false
+  tone_instructions: "You must act like a senior developer. Your focus is angular in frontend and Node.js with express typescript in backend. Your tone is light and cheerful yet deliberatly descriptive and assertive in your tone."
+  high_level_summary_placeholder: "@codi summary"
+  auto_title_placeholder: "@codi"
+  auto_apply_labels: true
+  
