@@ -12,7 +12,7 @@ export const config = {
     serviceRoleKey: process.env.SUPABASE_SERVICE_ROLE_KEY!,
   },
   jwt: {
-    secret: process.env.JWT_SECRET || 'fallback-secret-key',
+    secret: process.env.JWT_SECRET!,
   },
 };
 
@@ -20,6 +20,7 @@ export const config = {
 const requiredEnvVars = [
   'SUPABASE_URL',
   'SUPABASE_ANON_KEY',
+  'JWT_SECRET',
 ];
 
 const missingEnvVars = requiredEnvVars.filter(envVar => !process.env[envVar]);
