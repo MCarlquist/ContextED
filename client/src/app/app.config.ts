@@ -11,9 +11,10 @@ import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { provideHttpClient } from '@angular/common/http';
 import sv from '@angular/common/locales/sv';
+import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 
 registerLocaleData(en);
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideNzIcons(icons), provideNzI18n(en_US), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient(), provideNzIcons(icons), provideNzIcons(icons), provideNzI18n(sv_SE), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient()]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideNzIcons(icons), provideNzI18n(en_US), importProvidersFrom(FormsModule), NzPageHeaderModule, provideAnimationsAsync(), provideHttpClient(), provideNzIcons(icons), provideNzIcons(icons), provideNzI18n(sv_SE), importProvidersFrom(FormsModule), provideAnimationsAsync(), provideHttpClient()]
 };
