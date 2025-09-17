@@ -1,0 +1,6 @@
+:host {
+  display: block;
+  height: calc(100vh - 64px - 56px); /* Total viewport height - global header (64px) - nz-page-header (approx 56px) */
+  width: 100%; /* Explicitly set width */
+  overflow: hidden;
+}
