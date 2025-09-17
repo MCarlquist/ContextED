@@ -17,17 +17,10 @@
             <a routerLink="/home">Home</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Monitor</a>
+            <a routerLink="/leaderboard">Leaderboard</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Workplace</a>
-          </li>
-        </ul>
-      </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
-        <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
+            <a routerLink="/resources">Resources</a>
           </li>
         </ul>
       </li>
@@ -39,7 +32,6 @@
         <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
           <nz-icon class="trigger" [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
         </span>
-        <app-searchbar></app-searchbar>
       </div>
     </nz-header>
     <nz-content>
