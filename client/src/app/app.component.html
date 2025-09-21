@@ -1,5 +1,5 @@
 <nz-layout class="app-layout">
-  <nz-sider class="menu-sidebar"
+  <nz-sider *ngIf="!isLoginPage" class="menu-sidebar"
     nzCollapsible
     nzWidth="256px"
     nzBreakpoint="md"
@@ -27,7 +27,7 @@
     </ul>
   </nz-sider>
   <nz-layout>
-    <nz-header>
+    <nz-header *ngIf="!isLoginPage">
       <div class="app-header">
         <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
           <nz-icon class="trigger" [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'" />
